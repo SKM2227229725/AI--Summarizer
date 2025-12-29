@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI-Powered Research Paper Summarizer & Insight Extractor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h2>Paper Summarizer</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#upload">Upload PDF</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="https://github.com/SKM2227229725" target="_blank">GitHub</a></li>
+  <li> <a href="https://www.linkedin.com/in/shailesh-kumar-98192a295/" target="_blank"></i>Linkedin</a></li>
+   
+   
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <h1>AI-Powered Research Paper Summarizer & Insight Extractor</h1>
+  <p>Summarize long research papers quickly using AI </p>
+  <a href="#upload" class="btn">Upload PDF</a>
+</section>
+
+<!-- UPLOAD -->
+<section id="upload" class="section">
+  <h2>Upload Research Paper</h2>
+  <input 
+  type="file" 
+  id="pdfInput"
+  accept="application/pdf"
+>
+
+  <button class="btn">Generate Summary</button>
+  <p class="note">* Demo UI only, AI backend can be integrated later</p>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section light">
+  <h2>How It Works</h2>
+  <div class="grid">
+    <div class="card">📄 Upload PDF</div>
+    <div class="card">⚙️ Process Content</div>
+    <div class="card">📝 Generate Summary</div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="section">
+  <h2>Features</h2>
+  <div class="grid">
+    <div class="card">⚡ Fast Summary</div>
+    <div class="card">📑 PDF Support</div>
+    <div class="card">🤖 AI-Ready UI</div>
+  </div>
+</section>
+
+
+
+<!-- STATS -->
+<section class="section">
+  <h2>Project Stats</h2>
+  <div class="grid">
+    <div class="card"><span class="counter" data-target="1200">0</span><br>Papers</div>
+    <div class="card"><span class="counter" data-target="5">0</span> sec<br>Avg Time</div>
+    <div class="card"><span class="counter" data-target="300">0</span><br>Users</div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section light" id="faq">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-container">
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Is this a real AI tool?
+      </button>
+      <div class="faq-answer">
+        yes
+       
+      </div>
+       
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Does it support PDF files?
+      </button>
+      <div class="faq-answer">
+        Yes, the UI supports PDF upload.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Is this project free?
+      </button>
+      <div class="faq-answer">
+        Yes, it is created for learning and internship purposes.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- contact  list  -->     
+<!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h2>Let's Work Together</h2>
+            <p>
+              I'm currently available for freelance work and full-time
+              positions. Feel free to reach out if you're looking for a
+              developer, have a question, or just want to connect.
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <p>shailesh91199477@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h4>Phone</h4>
+                  <p>+91- 9119947743</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>Location</h4>
+                  <p>India, Uttar Pradesh </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <!-- Success/Error Messages -->
+            <div id="formMessages"></div>
+            
+            <!-- Formspree connected form -->
+            <form 
+              id="contactForm" 
+              action="https://formspree.io/f/xqawkzgo"
+
+              method="POST"
+            >
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              
+              <!-- Simple hidden fields without template variables -->
+              <input type="hidden" name="_subject" value="New message from portfolio website">
+              <input type="hidden" name="_replyto" id="_replytoField">
+              
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- FOOTER -->
+<footer>
+  <p> AI-Powered Research Paper Summarizer & Insight Extractor</p>
+  <p>
+    <a href="https://github.com/SKM2227229725">GitHub</a> |
+    <a href="https://www.linkedin.com/in/shailesh-kumar-98192a295/">LinkedIn</a> |
+    <a href="Shailesh9119947743@gmail.com">Email</a>
+    <a href="https://www.instagram.com/shaileshmaddheshiya9801/" >instagram</a>
+  </p>
+  <p>Terms | Privacy</p>
+  <p>© 2025 shailesh Maddheshiya</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
