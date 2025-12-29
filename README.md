@@ -32,4 +32,4 @@ Ye project ek AI‑based research paper summarizer hai jahan users PDF file uplo
 
 1. Repo clone kare:  
    ```bash
-   git clone <your‑repo‑url>
+    link  <https://aipapersummarizer.vercel.app/>
